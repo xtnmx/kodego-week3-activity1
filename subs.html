@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url(./wall1.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .ty {
+        width: 100%;
+      }
+
+      .bg-body-tertiary {
+        --bs-bg-opacity: 0.9;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        form {
+          width: 80% !important;
+        }
+      }
+
+      form {
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body class="">
+    <!-- NAVBAR -->
+    <nav id="nabar" class="navbar navbar-expand-lg bg-success px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bolder text-success-emphasis" href="#"
+          >TREES</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          `
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.html#why">Why?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.html#media">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.html#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <a href="./donate.html"
+            ><button
+              href="./donate.html"
+              class="btn btn-success border-primary border-2 text-white"
+              type="submit"
+            >
+              Donate
+            </button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Info in Subscribing -->
+    <div class="container">
+      <p
+        class="ty text-center my-5 p-5 border border-5 border-success-subtle bg-body-tertiary rounded-5"
+      >
+        Thank you for having an interest in subscribing on our Newsletter. Once
+        subscribed you'll be updated on important news and events.
+      </p>
+    </div>
+
+    <!-- FORM -->
+    <section class="container-fluid">
+      <form
+        class="mx-auto border border-5 border-success-subtle bg-body-tertiary rounded-5 p-5"
+      >
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            required
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+            required
+          />
+          <label class="form-check-label" for="exampleCheck1">Subscribe</label>
+        </div>
+        <button
+          onclick="alert('Thank you for subscribing.\nYou will now receive updates.')"
+          type="submit"
+          class="btn btn-success"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

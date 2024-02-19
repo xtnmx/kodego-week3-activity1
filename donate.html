@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url(./wall3.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .porm {
+        margin-top: 200px;
+      }
+
+      .donform {
+        width: 50%;
+        background-color: rgb(241, 241, 241, 0.3);
+        padding: 50px;
+        border: 1px solid rgb(241, 241, 241, 0.5);
+        border-radius: 10px;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      @media only screen and (max-width: 900px) {
+        .donform {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-body-tertiary">
+    <!-- NAVBAR -->
+    <nav id="nabar" class="navbar navbar-expand-lg bg-success px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bolder text-success-emphasis" href="#"
+          >TREES</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.html#why">Why?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.html#media">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.html#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <a href="subs.html"
+            ><button
+              href="subs.html"
+              class="btn btn-success border-warning-subtle border-2 text-white"
+              type="submit"
+            >
+              Subscribe to Newsletter
+            </button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="porm container-fluid">
+      <div class="donform my-3 mx-auto">
+        <div class="d-flex justify-content-between">
+          <h3>Donation Amount:</h3>
+          <div class="bg-body-primary p-3 rounded bg-success-subtle">
+            <h3 id="total">$0</h3>
+          </div>
+        </div>
+
+        <div class="btn-group gap-2" role="group" aria-label="Basic example">
+          <button
+            id="tendol"
+            onclick="changeText1()"
+            type="button"
+            class="btn btn-info"
+          >
+            $10
+          </button>
+          <button
+            id="twendol"
+            onclick="changeText2()"
+            type="button"
+            class="btn btn-info"
+          >
+            $20
+          </button>
+          <button
+            id="fifdol"
+            onclick="changeText3()"
+            type="button"
+            class="btn btn-info"
+          >
+            $50
+          </button>
+          <button
+            id="hundol"
+            onclick="changeText4()"
+            type="button"
+            class="btn btn-info"
+          >
+            $100
+          </button>
+        </div>
+        <form action="">
+          <div class="my-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Name</label
+            >
+            <input
+              type="name"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="skip to be anonymous"
+            />
+          </div>
+          <div class="my-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Your Message</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <button
+              onclick="alert('Thank you for your donation.')"
+              type="submit"
+              class="btn btn-info p-3 border border-primary border-2"
+            >
+              DONATE
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function changeText1() {
+        document.getElementById("total").innerHTML = "$10";
+      }
+      function changeText2() {
+        document.getElementById("total").innerHTML = "$20";
+      }
+      function changeText3() {
+        document.getElementById("total").innerHTML = "$50";
+      }
+      function changeText4() {
+        document.getElementById("total").innerHTML = "$100";
+      }
+    </script>
+  </body>
+</html>
